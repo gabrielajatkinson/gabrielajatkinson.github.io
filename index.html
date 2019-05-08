@@ -1,0 +1,1134 @@
+
+<!--Minty Theme --!>
+<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
+
+
+<!-------SOCIAL MEDIA STICKY BAR--------!>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+section{
+  text-align:center;
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+color: gray;
+}
+
+
+.btn {
+  border: 2px solid black;
+  background-color: pink;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* gray*/
+.success {
+  border-color: gray;
+  color: transparent;
+}
+
+
+$color: #0cf;
+
+.button {
+	display: inline-block;
+	padding: .75rem 1.25rem;
+	border-radius: 10rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: .15rem;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $color;
+		border-radius: 10rem;
+		z-index: -2;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: darken($color, 15%);
+		transition: all .3s;
+		border-radius: 10rem;
+		z-index: -1;
+	}
+	&:hover {
+		color: #fff;
+		&:before {
+			width: 100%;
+		}
+	}
+}
+
+
+/* optional reset for presentation */
+* {
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 20px;
+}
+.container {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-bottom: 2rem;
+  color: #777;
+}
+span {
+  display: block;
+  margin-top: 2rem;
+  font-size: .7rem;
+  color: #777;
+  a {
+    font-size: .7rem;
+    color: #999;
+    text-decoration: underline;
+  }
+}
+
+
+
+.flip-container {perspective: 1000px; transform-style: preserve-3d;}
+.flip-container:hover .back {transform: rotateY(0deg);}
+.flip-container:hover .front {transform: rotateY(180deg);}
+.flip-container, .front, .back {
+  width: 1000px;
+  height: 300px;
+  margin: 0 25px 25px 0;
+  float:center;
+}
+
+.flipper {transition: 0.6s; transform-style: preserve-3d;	position: relative;}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {z-index: 2;	transform: rotateY(0deg);}
+.back {
+	transform: rotateY(-180deg);
+  background: #ceefff;
+  color: transparent;
+  text-align:center;
+  line-height:1.4em;
+}
+
+.vertical.flip-container {position: relative;}
+.vertical .back {	transform: rotateX(180deg);}
+.vertical.flip-container:hover .back  {transform: rotateX(0deg);}
+.vertical.flip-container:hover .front {transform: rotateX(180deg);}
+.front {background: #ceefff; color:#fff; text-align:center; }
+h1{ padding-top:25px; color:#fff;}
+
+
+
+/*Now the styles*/
+* {
+	margin: 0; 
+	padding: 0;
+}
+body {
+	background: #ccc; 
+	font-family: arial, verdana, tahoma;
+}
+<!-------------ACCORDIAN GALLERY-------------------------------------------!>
+/*Time to apply widths for accordian to work
+Width of image = 300px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+	width: 200px; height: 200px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 500px;}
+
+
+.accordian li img {
+	display: block;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+width: 200px;	
+
+}
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 300px;
+
+}
+
+.column {
+  flex: 1;
+  color: black;
+text-align: center;
+
+}
+
+.column3 {
+  flex: 1;
+  color: black;
+text-align: center;
+padding: 30px;
+
+}
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+body {
+ background-color: #fefefe;
+ font-family: 'Lato', sans-serif;
+
+}
+
+
+h1 {
+  animation: glitch 3s steps(100) infinite;
+  color: #151515;
+  font-size: 6em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+
+
+h5 {
+  animation: glitch 3s steps(100) infinite;
+  color: #151515;
+  font-size: 75px;
+  text-align: center;
+float: center;
+  text-transform: uppercase;
+}
+
+h6 {
+  animation: glitch 3s steps(100) infinite;
+  color: #151515;
+  font-size: 30px;
+  text-align: center;
+float: center;
+  text-transform: uppercase;
+}
+
+p6 {
+  color: gray;
+  font-size: 13px;
+  text-align: center;
+float: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 9em;
+  }
+}
+
+@keyframes glitch { 
+  0% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  1% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  2% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  3% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  4% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  5% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  6% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  7% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  8% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  9% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  10% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  11% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  12% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  13% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  14% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  15% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  16% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  17% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  18% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  19% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  20% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  21% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  22% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  23% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  24% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  25% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  26% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0.5px);}
+  27% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0.5px);}
+  28% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  29% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  30% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  31% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  32% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  33% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  34% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  35% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  36% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  37% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  38% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  39% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  40% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  41% { text-shadow: 45px 0 0 #0c33f5, -45px 0 0 lime; filter: blur(0);}
+  42% { text-shadow: 0 0 0 #0c33f5, 0 0 0 lime; filter: blur(0);}
+  43% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  44% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  45% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  46% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  47% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+  48% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  49% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  50% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  51% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  52% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  53% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  54% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  55% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0.5px);}
+  56% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+  57% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+  58% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  59% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  60% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  61% { text-shadow: 30px 0 0 red, -30px 0 0 lime; filter: blur(0);}
+  62% { text-shadow: 0 0 0 red, 0 0 0 lime; filter: blur(0);}
+  63% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  64% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  65% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  66% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0.5px);}
+  67% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+  68% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  69% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  70% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  71% { text-shadow: 50px 0 0 red, -50px 0 0 #0c33f5; filter: blur(0);}
+  72% { text-shadow: 0 0 0 red, 0 0 0 #0c33f5; filter: blur(0);}
+  73% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  74% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  75% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  76% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  77% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  78% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  79% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  80% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  81% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  82% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  83% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  84% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  85% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  86% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+  87% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+  88% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  89% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  90% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  91% { text-shadow: 60px 0 0 lime, -60px 0 0 #0c33f5; filter: blur(0);}
+  92% { text-shadow: 0 0 0 lime, 0 0 0 #0c33f5; filter: blur(0);}
+  92% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  93% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  94% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  95% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  96% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  97% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  98% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  99% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  100% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);} }
+
+
+
+
+
+
+
+
+/* Base Styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.4em;
+	color: #222;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* ClearFix */
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; 
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/* Header Styles */
+
+header {
+	width: 100%;
+	height: 100px;
+	background: #F0F8FF;
+	position: fixed;
+	z-index: 2;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+}
+
+.small {
+  height: 50px;
+}
+
+.small .logo {
+	font-size: 2.6em;
+	margin-top: 5px;
+}
+
+nav {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo {
+	font-family: 'Lobster', cursive;
+	font-size: 4em;
+	font-weight: 400;
+	float: left;
+	padding: 5px;
+	margin-top: 25px;
+}
+
+/* Transitions */
+
+header, .logo{
+	-webkit-transition: all 1s;
+          transition: all 1s; 
+}
+
+/* Section Styles */
+
+.section {
+	max-width: 100%; 
+	height: 42em;
+	padding: 10px;
+}
+
+.section p22 {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 200;
+	text-align: left;
+	padding: 2.5em 0;
+}
+
+.section h2 {
+	color: #fff;
+	font-size: 6em;
+	font-weight: 200;
+	text-align: center;
+	padding: 2.5em 0;
+}
+
+.section h22 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 200;
+	text-align: center;
+	padding: 2.5em 0;
+}
+.one{
+	background: #6bb6ff;
+}
+
+.two{
+	background: #fbe0fc;
+}
+
+.three{
+	background: #fcf3ab;
+}
+
+.four{
+	background: #ceefff;
+
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.youtube {
+  background: #bb0000;
+  color: white;
+
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+body {
+ background-color: #fefefe;
+ font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  animation: glitch 3s steps(100) infinite;
+  color: #151515;
+  font-size: 6em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 9em;
+  }
+}
+
+@keyframes glitch { 
+  0% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  1% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  2% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  3% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  4% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  5% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  6% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  7% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  8% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  9% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  10% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  11% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  12% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  13% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  14% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  15% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  16% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  17% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  18% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  19% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  20% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  21% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  22% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  23% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  24% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  25% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  26% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0.5px);}
+  27% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0.5px);}
+  28% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  29% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  30% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  31% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  32% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  33% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  34% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  35% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  36% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  37% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+  38% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  39% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  40% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  41% { text-shadow: 45px 0 0 #0c33f5, -45px 0 0 lime; filter: blur(0);}
+  42% { text-shadow: 0 0 0 #0c33f5, 0 0 0 lime; filter: blur(0);}
+  43% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  44% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  45% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  46% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  47% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+  48% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  49% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  50% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  51% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  52% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  53% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  54% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  55% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0.5px);}
+  56% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+  57% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+  58% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  59% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  60% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  61% { text-shadow: 30px 0 0 red, -30px 0 0 lime; filter: blur(0);}
+  62% { text-shadow: 0 0 0 red, 0 0 0 lime; filter: blur(0);}
+  63% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  64% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  65% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+  66% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0.5px);}
+  67% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+  68% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  69% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  70% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  71% { text-shadow: 50px 0 0 red, -50px 0 0 #0c33f5; filter: blur(0);}
+  72% { text-shadow: 0 0 0 red, 0 0 0 #0c33f5; filter: blur(0);}
+  73% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  74% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  75% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  76% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+  77% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  78% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  79% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  80% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+  81% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  82% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+  83% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  84% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  85% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+  86% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+  87% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+  88% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  89% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  90% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+  91% { text-shadow: 60px 0 0 lime, -60px 0 0 #0c33f5; filter: blur(0);}
+  92% { text-shadow: 0 0 0 lime, 0 0 0 #0c33f5; filter: blur(0);}
+  92% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  93% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  94% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  95% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+  96% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  97% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  98% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  99% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+  100% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);} }
+
+
+
+
+</style>
+
+
+<!-----------------------------------------------------------!>
+
+<!--Checks how many Online Users there are--!>
+<style type="text/css">
+a.btn{position:absolute;z-index:999999999999;white-space:nowrap;outline:0;text-decoration:none;cursor:pointer;overflow:hidden;font:600 12px/18px "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;height:20px;padding:0 5px;-webkit-font-smoothing:antialiased;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;-webkit-transition-property:padding;-moz-transition-property:padding;-ms-transition-property:padding;-o-transition-property:padding;transition-property:padding;-webkit-transition-duration:.1s;-moz-transition-duration:.1s;-ms-transition-duration:.1s;-o-transition-duration:.1s;transition-duration:.1s;-webkit-transition-timing-function:ease;-moz-transition-timing-function:ease;-ms-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}.btn{color:#fff;border:1px solid rgba(0,0,0,0.18);background:rgba(0,0,0,0.38);text-shadow:1px 1px 0 rgba(0,0,0,0.08)}a.btn,a.btn:hover{color:white!important}.btn{margin-bottom:5px;color:#fff;border:1px solid rgba(0,0,0,0.18);background:rgba(0,0,0,0.38);text-shadow:1px 1px 0 rgba(0,0,0,0.08);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px}.btn:hover::after,.btn:focus::after{background:rgba(255,255,255,0.09);color:white}.btn:active::after{background:rgba(255,255,255,0.18) color:white}.btn_label.show{display:block}.btn::after{position:absolute;top:0;right:0;bottom:0;left:0;content:'';-webkit-border-radius:inherit;-moz-border-radius:inherit;border-radius:inherit}.btn.icon::before{display:block;content:'';position:absolute;top:0;left:0;bottom:0;width:20px;border-radius:inherit;background:url('http://static.tumblr.com/tpqedpr/cQ1mbwb60/de.png') 0 0 no-repeat}.btn.theme::before{background-position:0 -0px}.btn img{width:15px}.btn.icon{padding-left:20px}.btn:active::after {background:rgba(255,255,255,0.18)}.clear {clear: both;} #pagination {display: all;}
+</style>
+
+<!---Script Java Script---------------------------------------!>
+<script language="JavaScript">
+// FHS Tumblr Online Counter
+var height = '28'; 
+var fhs = document.createElement('script');var fhs_id = "5609492";
+var ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + " x " + window.screen.height;
+fhs.src = "//freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=Online User&e2=Online Users&r="+ref+"&wh="+w_h+"&a=1&pn="+pn+"&s=1&a=1&h=&h="+height+"";
+document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
+</script>
+
+<script>
+</script>
+<!-------------------------------------------------------------------------------------------------!>
+
+
+<!-------------------------------------------------------------------------------------------------!>
+<!-- cursor--!>
+<style type="text/css">html, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-10/cur970.cur), progress !important;}</style><a href="http://www.cursors-4u.com/" target="_blank" title="Metal Pointer"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Metal Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+<style>
+
+
+
+
+
+
+
+
+
+
+<!---------Style for Header-----------!>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 3000px; /* Used to enable scrolling */
+  background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
+}
+
+.header {
+  padding: 10px 16px;
+  background:  #ffffff;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+
+<!---------------------!>
+
+
+<!------!>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+  
+  perspective: 500px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: light gray;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: light gray;
+  color: white;
+  transform: rotateX(180deg);
+}
+<!-------!>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column1 {
+  float: center;
+  width: 50%;
+  padding: 2px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+</head>
+<body>
+
+
+<div class="header" id="myHeader">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>VegWeb</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2><img src="https://png.pngtree.com/svg/20170815/084da61e9d.svg" alt="Girl in a jacket" alt="Girl in a jacket" width="200" height="60">
+</h2>
+    </div>
+  </div>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/recipes.html">Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about.html">About</a>
+      </li>
+<li class="nav-item">
+        <a class="nav-link" href="/contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+</div>
+
+<!--------Script for Header--------!>
+
+<script>
+$(document).on("scroll", function () {
+	if ($(document).scrollTop() > 100) {
+		$("header").addClass("small");
+	} else {
+		$("header").removeClass("small");
+	}
+});
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Lobster|Raleway:400,200' rel='stylesheet' type='text/css'>
+
+
+
+	<section class="section one">
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+<h1>Welcome <img src="https://www.freeiconspng.com/uploads/leaf-plants-nature-icon-23.png" width="75" height="75"> </h1>
+
+<p22>For Recipes, Tips, Information, and More....</p22>   
+
+
+	</section>
+
+
+	<section class="section two">
+  			<div class="row">
+<div class="row">
+  <div class="column3">
+<br></br>
+<br></br>
+<br></br>
+
+<a href="/recipes.html">
+<img src="https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/54da9141e4b0cf15c28b05d7/1423610191021/the+coconut+raspberry+smoothie+%23vegan+%23smoothies+%23smoothierecipes+%7C+RECIPE+on+hotforfoodblog.com" alt="Girl in a jacket" width="400" height="350">
+</a>
+<br></br>
+
+<h6>RASBERRY SMOOTHIE</h6>
+<p6>Easy/Breakfast/Drink</p6>
+
+</div>
+  <div class="column3">
+<br></br>
+<br></br>
+<br></br>
+
+<a href="/recipes.html">
+<img src="https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/5834b6e34402431b4528bdce/1479849765683/whole+roasted+cauliflower+skillet+*+The+perfect+Thanksgiving+meal+%7C+RECIPE+on+hotforfoodblog.com" width="435" height="350">
+</a>
+<br></br>
+<h6>CAULIFLOWER ROAST</h6>
+<p6>Medium Difficulty/Main/Mutiple Serving</p6>
+<br></br>
+<br></br>
+
+<button class="btn success">Click for More Recipes</button>
+
+
+
+
+</div>
+  <div class="column3">
+<br></br>
+<br></br>
+<br></br>
+
+<a href="/recipes.html">
+<img src="https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/53b4e0eee4b070bf70821488/1404362993603/raw+apple+crumble+%7C+RECIPE+on+hotforfoodblog.com" width="350" height="350">
+</a>
+<br></br>
+
+<h6>Raw Apple Crumble</h6>
+<p6>Easy/Dessert/Small Plate</p6>
+</div>
+</div>
+  </div>
+</div>
+	</section>
+
+
+<!----------------------------------------SECTION 3---------------------------------------------------------------!>
+	<section class="section three">
+<div class="container">
+  <div class="column" style="background: transparent">
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+    <img src="https://image.flaticon.com/icons/png/128/857/857681.png" alt="Girl in a jacket" width="75" height="75">
+<br></br>
+<p>To get technical, a vegan doesn't consume any animal products including meat, eggs, milk, dairy, and honey. For some vegans, the primary reason for leading a vegan lifestyle is related to ethics and animal welfare.</p>
+
+
+  </div> 
+ 
+  <div class="column" style="background: transparent">
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+    <img src=" http://cdn.onlinewebfonts.com/svg/img_480611.png" alt="Girl in a jacket" width="75" height="75">
+<br></br>
+<p>Find plantbased breakfast, main, dessert, appetizers, drinks, and more that give you both a delicious meal while helping the earth and your body.</p>
+  </div>
+  <div class="column" style="background: transparent">
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+        <img src="   http://cdn.onlinewebfonts.com/svg/img_174839.png
+" alt="Girl in a jacket" width="75" height="75">
+<br></br>
+<p>A plant-based way of eating focuses on consuming plant-derived whole foods that are unrefined and minimally processed. This means pure, unadulterated ingredients that are in their original form.</p>
+>
+
+  </div>
+</div>
+	</section>
+
+<!----SECTION 4-------------------------------------------------------------------------!>
+
+	<section class="section four">
+    <div class="container">
+
+
+<a href="#">
+  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    <div class="flipper">
+      <div class="front">
+<br></br>
+<h5>Our New Cookbook</h5>
+<br></br>
+
+<img src="   https://images-na.ssl-images-amazon.com/images/I/91pCkt%2BoomL.jpg
+" alt="Girl in a jacket" width="600" height="600"></div>
+     
+
+ <div class="back">
+<br></br>
+<h5>Available Now!</h5>
+<img src="   https://images-na.ssl-images-amazon.com/images/I/712SDgdqZsL.jpg" width="800" height="600">></div>
+    </div>
+  </div>
+</a>
+
+
+
+    </div>
+	</section>
+
+
+
+<div class="footer">
+  <div id="button"></div>
+<div id="container">
+<div id="cont">
+<div class="footer_center">
+    <h3>&copy Gabriela Atkinson. All Rights Reserved. <img src="https://i.pinimg.com/originals/5a/09/c1/5a09c1e50cc9c1259e6fe347efccc17e.gif" alt="Flowers in Chania" style="width:40px;height:40px;">
+</h3>
+</div>
+</div>
+</div>
+</div>
+<!--social media bar----------------------------------------------------------------------------------------!>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-fdfa5b47-dca8-4cb4-8cd6-6a7715fabebf"></div>
+</body>
+<!----------------------------------------------------------------------------------------!>
+

@@ -1,0 +1,709 @@
+
+<!--Minty Theme --!>
+<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
+<html> 
+  <head>
+
+<!-------SOCIAL MEDIA STICKY BAR--------!>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+section{
+  text-align:center;
+}
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #727172 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: #3A3A3A;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Helvetica';
+	font-size: 20px;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+color: gray;
+}
+
+
+
+
+html, body {
+  width: 100%;
+  height: 400px;
+}
+
+.items-row {
+  display: -webkit-flex;
+  display:     -ms-flexbox;
+  display:         flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+}
+.item {
+  margin: 2px;
+  border: 1px solid #dddddd;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+  -webkit-flex: 1 1 20%;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+  transition: flex 0.4s ease;
+}
+.item:hover {
+  -webkit-flex: 0.000000001 0.00000001 400px;
+      -ms-flex: 0.000000001 0.00000001 400px;
+          flex: 0.000000001 0.00000001 400px;
+  background-size: 100% 100%
+}
+
+.img1 {
+  background-image: url('https://www.hotforfoodblog.com/wp-content/uploads/2019/03/VBLTAbowl_hotforfood_filtered2-1024x683.jpg');
+  background-repeat: no-repeat;
+}
+.img2 {
+  background-image: url('https://www.hotforfoodblog.com/wp-content/uploads/2019/01/veganlatkes_hotforfood_filtered1.jpg');
+  background-repeat: no-repeat;
+}
+.img3 {
+  background-image: url('https://www.hotforfoodblog.com/wp-content/uploads/2018/07/chocolate-chip-banana-waffles_hotforfood_filtered-1-e1536351645890.jpg');
+  background-repeat: no-repeat;
+}
+.img4 {
+  background-image: url('https://www.hotforfoodblog.com/wp-content/uploads/2019/03/everythingdanishes_hotforfood_filtered3-e1553634111755-1024x746.jpg');
+  background-repeat: no-repeat;
+}
+.img5 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/57a8e97d893fc076d9ee1d21/1470687638505/how+to+make+vegan+coffee+cake+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+.img6 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/57843b0cf7e0ab851b7a9cca/1468283673567/how+to+make+a+vegan+omelette+%7C+RECIPE+by+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img7 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/56f972e9c2ea51b69df14f2f/1459188653201/vegan+breakfast+tacos+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+.img8 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/5726a85545bf21105b64131b/1462151286642/vegan+caramel+pecan+cinnamon+rolls+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img9 {
+  background-image: url('https://www.hotforfoodblog.com/wp-content/uploads/2019/04/vegansheetpanburrito_hotforfood_filtered2-1024x683.jpg');
+  background-repeat: no-repeat;
+}
+
+.img10 {
+  background-image: url('https://www.hotforfoodblog.com/wp-content/uploads/2019/04/roastedveggienachos_hotforfood_filtered5-1024x683.jpg');
+  background-repeat: no-repeat;
+}
+
+.img11 {
+  background-image: url('https://www.hotforfoodblog.com/wp-content/uploads/2018/06/bbqpulledporksandwich_hotforfood_filtered4.jpg');
+  background-repeat: no-repeat;
+}
+
+.img12 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/5942e56a4f14bc0bac94c62b/1497556354938/vegan+adobo+chili+mac+%26+cheese+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img13 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/582b72a7d1758eee371510e1/1479242419802/vegan+thanksgiving+roast+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img14 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/57e6f221b3db2b1dd11a2e29/1474754309463/vegan+pumpkin+ravioli+%28pumpkin+cheese+filling%29+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img15 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/577fcf909f7456bb2e36cab2/1467994013779/vegan+pulled+bbq+mushroom+sandwiches+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img16 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/56ccdb49859fd01fdfdbcd45/1456266095404/vegan+macaroni+skillet+%28aka+veagn+hamburger+helper%21%29+%7C+RECIPE+by+hot+for+food.jpgvegan+macaroni+skillet+%28aka+veagn+hamburger+helper%21%29+%7C+RECIPE+by+hot+for+food?format=original');
+  background-repeat: no-repeat;
+}
+
+.img17 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/57b745e03e00be217000a36c/1471628784334/vegan+s%27more+tacos+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img18 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/56bc14f42fe1311b083e5764/1455166735974/vegan+chocolate+hazelnut+tarts+%7C+RECIPE+by+hot+for+food.jpgvegan+chocolate+hazelnut+tarts+%7C+RECIPE+by+hot+for+food?format=original');
+  background-repeat: no-repeat;
+}
+.img19 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/5630db13e4b02337d34a2dab/1446042396163/easy+vegan+brownie+bites+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+.img20 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/564d4f03e4b0dfba6e876285/1447907139504/maple+glazed+vegan+pumpkin+scones+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+.img21 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/5519d279e4b02e9aae0a8228/1427755649715/nut-free+chocolate+truffles+%23vegan+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img22 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/54ca88f4e4b07c814ee11aa5/1422559511777/%23vegan+%23glutenfree+hot+fudge+sundae+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+.img23 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/55270362e4b0f43c1193611b/1428620137859/%23vegan+peanut+butter+cups+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+.img24 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/5473579be4b03e7d0378f247/1416845217006/peanut+butter+and+jam+squares+by+earth+%2B+city+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+.img25 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/584f130920099e4b5207e676/1481577370951/vegan+egg+nog+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+.img26 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/55ad16b1e4b03c2504376ec4/1437406908717/watermelon+icebergs+%23drinks+%23mocktails+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img27 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/555b93a3e4b04e9c4f740262/1432065024221/strawberry+ginger+basil+prosecco+cocktail+%23vegan+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+.img28 {
+  background-image: url('https://static1.squarespace.com/static/52a0e62be4b0aa09f5b95593/52a0f48ee4b0f982fc451b89/584f174b579fb3136b7b1ee4/1481578333886/vegan+hazelnut+hot+chocolate+%7C+RECIPE+on+hotforfoodblog.com');
+  background-repeat: no-repeat;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.youtube {
+  background: #bb0000;
+  color: white;
+</style>
+
+
+<!-----------------------------------------------------------!>
+
+<!--Checks how many Online Users there are--!>
+<style type="text/css">
+a.btn{position:absolute;z-index:999999999999;white-space:nowrap;outline:0;text-decoration:none;cursor:pointer;overflow:hidden;font:600 12px/18px "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;height:20px;padding:0 5px;-webkit-font-smoothing:antialiased;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;-webkit-transition-property:padding;-moz-transition-property:padding;-ms-transition-property:padding;-o-transition-property:padding;transition-property:padding;-webkit-transition-duration:.1s;-moz-transition-duration:.1s;-ms-transition-duration:.1s;-o-transition-duration:.1s;transition-duration:.1s;-webkit-transition-timing-function:ease;-moz-transition-timing-function:ease;-ms-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}.btn{color:#fff;border:1px solid rgba(0,0,0,0.18);background:rgba(0,0,0,0.38);text-shadow:1px 1px 0 rgba(0,0,0,0.08)}a.btn,a.btn:hover{color:white!important}.btn{margin-bottom:5px;color:#fff;border:1px solid rgba(0,0,0,0.18);background:rgba(0,0,0,0.38);text-shadow:1px 1px 0 rgba(0,0,0,0.08);-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px}.btn:hover::after,.btn:focus::after{background:rgba(255,255,255,0.09);color:white}.btn:active::after{background:rgba(255,255,255,0.18) color:white}.btn_label.show{display:block}.btn::after{position:absolute;top:0;right:0;bottom:0;left:0;content:'';-webkit-border-radius:inherit;-moz-border-radius:inherit;border-radius:inherit}.btn.icon::before{display:block;content:'';position:absolute;top:0;left:0;bottom:0;width:20px;border-radius:inherit;background:url('http://static.tumblr.com/tpqedpr/cQ1mbwb60/de.png') 0 0 no-repeat}.btn.theme::before{background-position:0 -0px}.btn img{width:15px}.btn.icon{padding-left:20px}.btn:active::after {background:rgba(255,255,255,0.18)}.clear {clear: both;} #pagination {display: all;}
+</style>
+
+<!---Script Java Script---------------------------------------!>
+<script language="JavaScript">
+// FHS Tumblr Online Counter
+var height = '28'; 
+var fhs = document.createElement('script');var fhs_id = "5609492";
+var ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + " x " + window.screen.height;
+fhs.src = "//freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=Online User&e2=Online Users&r="+ref+"&wh="+w_h+"&a=1&pn="+pn+"&s=1&a=1&h=&h="+height+"";
+document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
+</script>
+
+<!-------------------------------------------------------------------------------------------------!>
+
+
+<!-------------------------------------------------------------------------------------------------!>
+<!-- cursor--!>
+<style type="text/css">html, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-10/cur970.cur), progress !important;}</style><a href="http://www.cursors-4u.com/" target="_blank" title="Metal Pointer"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Metal Pointer" style="position:absolute; top: 0px; right: 0px;" /></a>
+<style>
+h5 {
+  animation: glitch 3s steps(100) infinite;
+  color: #151515;
+  font-size: 75px;
+  text-align: center;
+float: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+<!---------Style for Header-----------!>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 3000px; /* Used to enable scrolling */
+  background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
+}
+
+.header {
+  padding: 10px 16px;
+  background:  #ffffff;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+<!---------------------!>
+
+
+<!------!>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  
+  perspective: 500px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: light gray;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: light gray;
+  color: white;
+  transform: rotateX(180deg);
+}
+<!-------!>
+</style>
+
+</head>
+<body>
+
+
+<div class="header" id="myHeader">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>VegWeb</h2>
+    </div>
+    <div class="flip-box-back">
+      <h2><img src="https://png.pngtree.com/svg/20170815/084da61e9d.svg" alt="Girl in a jacket" width="100" height="60">
+</h2>
+    </div>
+  </div>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/recipes.html">Recipes</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about.html">About</a>
+      </li>
+<li class="nav-item">
+        <a class="nav-link" href="/contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+</div>
+
+<!--------Script for Header--------!>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<!---------------------!>
+
+
+<!--------------------------------------------------------------------------------------------------------!>
+
+<!---CAROUSEL BELOW NAVBAR--------------------------------------------------------------------!>
+<style type="text/css">
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out 5s;
+       -moz-transition: 2s all ease-in-out 5s; 
+        -ms-transition: 2s all ease-in-out 5s; 
+         -o-transition: 2s all ease-in-out 5s; 
+            transition: 2s all ease-in-out 5s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out 5s;
+       -moz-transition: 2s all ease-in-out 5s; 
+        -ms-transition: 2s all ease-in-out 5s; 
+         -o-transition: 2s all ease-in-out 5s; 
+            transition: 2s all ease-in-out 5s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(https://www.hotforfoodblog.com/wp-content/uploads/2019/01/tokyomixpopcorn_hotforfood_filtered1.jpg); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(https://www.hotforfoodblog.com/wp-content/uploads/2018/07/greenwaffles_hotforfood_filtered3-1024x683.jpg);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(https://www.hotforfoodblog.com/wp-content/uploads/2018/06/vegansavorycrepe_hotforfood_filtered2-1024x683.jpg);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+</style>
+
+
+<body>
+<p><h5>Breakfast</h5></p>
+
+<div class="items-row">
+  <div class="item img1"></div>
+  <div class="item img2"></div>
+  <div class="item img3"></div>
+  <div class="item img4"></div>
+  <div class="item img5"></div>
+  <div class="item img6"></div>
+  <div class="item img7"></div>
+  <div class="item img8"></div>
+
+</div>
+<p><h5>Main</h5></p>
+
+<div class="items-row">
+  <div class="item img9"></div>
+  <div class="item img10"></div>
+  <div class="item img11"></div>
+  <div class="item img12"></div>
+  <div class="item img13"></div>
+  <div class="item img14"></div>
+  <div class="item img15"></div>
+  <div class="item img16"></div>
+
+</div>
+<p><h5>Dessert</h5></p>
+
+<div class="items-row">
+  <div class="item img17"></div>
+  <div class="item img18"></div>
+  <div class="item img19"></div>
+  <div class="item img20"></div>
+  <div class="item img21"></div>
+  <div class="item img22"></div>
+  <div class="item img23"></div>
+  <div class="item img24"></div>
+
+</div>
+
+<p><h5>Drinks</h5></p>
+
+<div class="items-row">
+  <div class="item img25"></div>
+  <div class="item img26"></div>
+  <div class="item img27"></div>
+  <div class="item img28"></div>
+
+
+</div>
+<p><h5> .  </h5></p>
+
+<div class="footer">
+  <div id="button"></div>
+<div id="container">
+<div id="cont">
+<div class="footer_center">
+    <h3>&copy Gabriela Atkinson. All Rights Reserved. <img src="https://i.pinimg.com/originals/5a/09/c1/5a09c1e50cc9c1259e6fe347efccc17e.gif" alt="Flowers in Chania" style="width:40px;height:40px;">
+</h3>
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-fdfa5b47-dca8-4cb4-8cd6-6a7715fabebf"></div>
+</body>
+</head>
+</html> 
